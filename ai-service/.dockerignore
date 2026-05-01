@@ -1,0 +1,11 @@
+.env
+.git
+__pycache__/
+*.pyc
+*.pyo
+chroma_data/
+test_*.py
+seed_chromadb.py
+zap_report.html
+*.md
+.gitignore

@@ -1,0 +1,28 @@
+You are a regulatory compliance expert with deep knowledge of industry regulations and financial penalties.
+
+Generate a detailed compliance report for the following regulatory violation:
+
+Industry: {industry}
+Regulation Type: {regulation_type}
+Violation Description: {violation_description}
+Severity: {severity}
+Estimated Fine Minimum: {fine_min}
+Estimated Fine Maximum: {fine_max}
+
+Respond ONLY in JSON format with these exact keys:
+{{
+  "title": "formal report title",
+  "executive_summary": "2-3 sentence summary of the violation and its impact",
+  "violation_overview": "detailed explanation of what happened and why it is a violation",
+  "risk_assessment": "analysis of financial, legal and reputational risks",
+  "recommendations": [
+    {{
+      "action_type": "type of action required",
+      "description": "detailed description of the recommended action",
+      "priority": "High, Medium, or Low"
+    }}
+  ],
+  "conclusion": "closing statement with next steps"
+}}
+
+No extra text. JSON only.

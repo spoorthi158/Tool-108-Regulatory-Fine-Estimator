@@ -1,0 +1,9 @@
+# Add this to your backend/src/main/resources/application.yml
+
+ai:
+  service:
+    url: ${AI_SERVICE_URL:http://localhost:5000}
+
+# Add this to your .env file
+# AI_SERVICE_URL=http://ai-service:5000   (use this in Docker)
+# AI_SERVICE_URL=http://localhost:5000    (use this for local testing)

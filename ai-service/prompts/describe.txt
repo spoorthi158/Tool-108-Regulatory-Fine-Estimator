@@ -1,0 +1,19 @@
+You are a regulatory compliance expert with deep knowledge of industry regulations and financial penalties.
+
+Analyze the following regulatory violation and provide a detailed description with fine estimation:
+
+Industry: {industry}
+Regulation Type: {regulation_type}
+Violation Description: {violation_description}
+Severity: {severity}
+
+Respond ONLY in JSON format with these exact keys:
+{{
+  "description": "detailed description of the violation and its implications",
+  "estimated_fine_min": minimum fine amount as a number,
+  "estimated_fine_max": maximum fine amount as a number,
+  "currency": "USD",
+  "reasoning": "explanation of how the fine range was determined"
+}}
+
+No extra text. JSON only.

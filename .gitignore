@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+chroma_data/
+node_modules/
+target/
+*.class
+.idea/
+*.iml
