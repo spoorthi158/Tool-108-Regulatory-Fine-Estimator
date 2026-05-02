@@ -1,0 +1,204 @@
+DEMO DAY FINAL SCRIPT — Spoorthi — AI Developer 1
+Time: 1.5 minutes
+============================================================
+
+OPENING (5 seconds)
+--------------------
+"Let me show you the AI brain of our tool."
+
+[Make sure the tool is open on screen]
+[Have a violation record ready to create]
+
+============================================================
+PART 1 — AI DESCRIBE (25 seconds)
+============================================================
+[Create a new record with these details:
+ Company: MediCare Solutions
+ Industry: Healthcare
+ Regulation: HIPAA
+ Violation: Unauthorized disclosure of 10,000 
+            patient records to a third party vendor
+ Severity: High]
+
+SAY:
+"I have just entered a real-world scenario —
+a healthcare company that leaked patient records.
+
+The moment I save this record, our AI automatically
+analyzes the violation."
+
+[Click Save / Submit]
+[Point to the AI Describe section appearing]
+
+"Look at this — in under 3 seconds, the AI has:
+identified this as a serious HIPAA violation,
+estimated the fine between $100,000 and $1.5 million,
+and explained exactly why using regulatory law."
+
+[Pause 2 seconds — let judges read the screen]
+
+============================================================
+PART 2 — AI RECOMMEND (20 seconds)
+============================================================
+[Click the Recommend button]
+
+SAY:
+"Now I click AI Recommend..."
+
+[Wait for response]
+
+"Three specific actions — Legal, Technical, Training —
+each ranked by priority.
+
+High priority: Engage a compliance attorney immediately.
+High priority: Conduct a full security audit.
+Medium priority: Mandatory staff training.
+
+This is exactly what a compliance officer needs —
+not just the fine, but what to do next."
+
+============================================================
+PART 3 — GENERATE REPORT (20 seconds)
+============================================================
+[Click Generate Report button]
+
+SAY:
+"And finally — Generate Report."
+
+[Wait for response — point to sections]
+
+"A complete professional compliance report —
+Executive Summary at the top,
+Violation Overview explaining what went wrong,
+Risk Assessment showing financial and legal exposure,
+and a Conclusion with next steps.
+
+This would take a compliance team hours to write.
+Our AI does it in under 3 seconds."
+
+============================================================
+PART 4 — 60 SECOND TECH EXPLANATION
+============================================================
+SAY:
+"Let me explain how this works technically.
+
+We built a Python Flask microservice — completely separate
+from the Java backend — running on port 5000.
+
+When a record is saved, the Java backend calls our
+Flask service automatically in the background.
+
+Our service takes the violation details, fills a
+carefully designed prompt template, and sends it
+to Groq — the world's fastest AI inference platform.
+
+Groq runs Meta's LLaMA 3.3 model —
+70 billion parameters — completely free.
+
+We chose LLaMA 3.3 because it understands regulatory
+language extremely well, and Groq delivers responses
+in under 3 seconds — faster than any other platform.
+
+Every input is sanitised before reaching the AI.
+If Groq is ever unavailable, a professional fallback
+response is returned automatically.
+
+The tool never crashes. The tool never shows an error."
+
+============================================================
+3 IMPRESSIVE DEMO INPUTS
+============================================================
+
+INPUT 1 — Best for /describe (clear fine range):
+-------------------------------------------------
+Industry: Healthcare
+Regulation: HIPAA
+Violation: A hospital employee sold 50,000 patient 
+           records to a marketing company for profit
+Severity: Critical
+Fine Min: 500000
+Fine Max: 5000000
+
+WHY IT'S IMPRESSIVE:
+- Critical severity gives dramatic AI output
+- Clear dollar amounts impress judges
+- Real-world relatable scenario
+
+------------------------------------------------------------
+
+INPUT 2 — Best for /recommend (clear action items):
+----------------------------------------------------
+Industry: Finance
+Regulation: AML
+Violation: Bank failed to report $50 million in 
+           suspicious transactions over 6 months
+Severity: High
+Fine Min: 1000000
+Fine Max: 10000000
+
+WHY IT'S IMPRESSIVE:
+- Large fine numbers catch attention
+- AML gives very specific technical recommendations
+- Banking scenario judges understand easily
+
+------------------------------------------------------------
+
+INPUT 3 — Best for /generate-report (full report):
+---------------------------------------------------
+Industry: Technology
+Regulation: GDPR
+Violation: Company transferred EU citizen data to 
+           servers in a non-adequate country without 
+           user consent or legal basis
+Severity: Critical
+Fine Min: 2000000
+Fine Max: 20000000
+
+WHY IT'S IMPRESSIVE:
+- GDPR is globally recognized
+- Large fine range is dramatic
+- Report sections are very detailed and professional
+
+============================================================
+IF GROQ IS SLOW DURING LIVE DEMO
+============================================================
+
+SITUATION 1 — Response taking more than 5 seconds:
+SAY:
+"The AI is processing — this is a 70 billion parameter
+model analyzing complex regulatory law in real time.
+While we wait, let me explain what's happening behind
+the scenes..."
+[Then explain Flask + Groq briefly]
+[Response will arrive before you finish]
+
+------------------------------------------------------------
+
+SITUATION 2 — Response taking more than 10 seconds:
+SAY:
+"Let me show you a previous result while this loads..."
+[Switch to your backup screenshots]
+[Show screenshot_describe.png]
+"This is what the AI typically returns — a complete
+legal analysis with fine range in under 3 seconds."
+
+------------------------------------------------------------
+
+SITUATION 3 — Fallback response appears:
+SAY:
+"Interestingly, you can see is_fallback is true here —
+this means our fallback system activated automatically.
+This is actually a feature — not a bug.
+Even when Groq is unavailable, our tool never crashes
+and always returns a professional response."
+[This turns a problem into a strength!]
+
+============================================================
+CONFIDENCE TIPS FOR DEMO DAY
+============================================================
+- Speak slowly — judges need time to read the screen
+- Point to specific parts of the response as you talk
+- Smile when the AI responds — show you are proud of it
+- If something goes wrong — stay calm and use backup screenshots
+- Remember: you built this from scratch in 18 days!
+============================================================
