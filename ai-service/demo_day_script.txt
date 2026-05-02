@@ -1,0 +1,155 @@
+DEMO DAY SCRIPT — AI Developer 1 — Spoorthi
+============================================================
+MY SECTION: 1.5 minutes
+============================================================
+
+STEP 1 — AI DESCRIBE (20 seconds)
+-----------------------------------
+[Click Describe button in the UI]
+
+SAY:
+"I will now show you our AI in action.
+I have entered a Healthcare company with a HIPAA violation —
+unauthorized disclosure of patient records.
+
+Watch what happens when I click AI Describe..."
+
+[Wait for response — point to screen]
+
+"The AI has instantly analyzed this violation and estimated
+a fine range between $100,000 and $1.5 million dollars —
+with a full legal explanation of why."
+
+STEP 2 — AI RECOMMEND (20 seconds)
+-------------------------------------
+[Click Recommend button in the UI]
+
+SAY:
+"Now I click AI Recommend..."
+
+[Wait for response — point to 3 cards]
+
+"The AI has generated 3 specific action items —
+Legal, Technical, and Training —
+each with a priority level.
+This tells the compliance officer exactly what to do next."
+
+STEP 3 — GENERATE REPORT (20 seconds)
+---------------------------------------
+[Click Generate Report button]
+
+SAY:
+"Finally, Generate Report..."
+
+[Wait for response]
+
+"A full professional compliance report — with executive
+summary, risk assessment, and conclusions —
+generated in under 3 seconds."
+
+============================================================
+60 SECOND TECH EXPLANATION
+============================================================
+
+SAY:
+"Let me explain the technology behind this.
+
+We built a Python Flask microservice that runs on port 5000.
+When the Java backend needs AI analysis, it calls our service.
+
+Our service loads the violation details, fills a carefully
+crafted prompt template, and sends it to Groq —
+one of the fastest AI platforms in the world.
+
+Groq runs the LLaMA 3.3 model — that is Meta's open source
+large language model with 70 billion parameters.
+We chose LLaMA 3.3 because it is free, extremely fast,
+and produces highly accurate regulatory analysis.
+
+Every input is sanitised before reaching the AI —
+we strip HTML and block prompt injection attacks.
+If Groq is unavailable, we return a professional
+fallback response automatically — the tool never crashes.
+
+Average response time: under 3 seconds."
+
+============================================================
+JUDGE QUESTIONS — MEMORIZE THESE ANSWERS
+============================================================
+
+QUESTION 1:
+"What AI model are you using and why?"
+
+ANSWER:
+"We are using LLaMA 3.3 70 billion parameter model
+via the Groq API.
+
+We chose LLaMA 3.3 for three reasons:
+First — it is free to use with no credit card required.
+Second — Groq is the fastest AI inference platform
+available, giving us responses under 3 seconds.
+Third — LLaMA 3.3 is Meta's most capable open source
+model, producing highly accurate regulatory analysis.
+
+We tested it against 30 real compliance scenarios
+and all 30 returned professional, accurate results."
+
+------------------------------------------------------------
+
+QUESTION 2:
+"What happens if the AI service goes down?"
+
+ANSWER:
+"We have a three-layer protection system.
+
+Layer 1 — We retry the Groq API up to 3 times
+with exponential backoff before giving up.
+
+Layer 2 — We have an 8-second timeout on every
+Groq call so the service never hangs.
+
+Layer 3 — If all retries fail, we return a
+pre-built professional fallback response
+with is_fallback set to true.
+
+The Java backend always receives a valid response.
+The tool never shows an error to the user.
+The tool never returns HTTP 500."
+
+------------------------------------------------------------
+
+QUESTION 3:
+"How do you prevent prompt injection attacks?"
+
+ANSWER:
+"We built a custom sanitiser in services/sanitiser.py
+that runs on every input before it reaches the AI.
+
+It does two things:
+First — it strips all HTML tags from the input
+to prevent cross-site scripting.
+
+Second — it checks for 10 known injection patterns
+such as 'ignore previous instructions',
+'act as', 'jailbreak', and 'system prompt'.
+
+If any injection pattern is detected, we return
+HTTP 400 with an error message immediately —
+the input never reaches Groq.
+
+We verified this with OWASP ZAP scanning —
+zero Critical and zero High security findings."
+
+============================================================
+KEY NUMBERS — MEMORIZE THESE
+============================================================
+- Model        : LLaMA 3.3 70b via Groq API
+- Port         : 5000
+- Endpoints    : /describe /recommend /generate-report /health
+- Response time: under 3 seconds
+- Security     : 0 Critical 0 High (ZAP scan)
+- Records tested: 30 out of 30 passing
+- Fallback     : never crashes never returns 500
+- Retries      : 3 attempts with 8 second timeout
+- Injection patterns blocked: 10
+============================================================
